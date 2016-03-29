@@ -7,4 +7,6 @@ Provisioning to Server used Itamae
 - Kibana4.4
 
 ## Usage
-TODO...
+```
+$ bundle exec itamae ssh --vagrant roles/web.rb
+```
