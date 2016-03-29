@@ -29,3 +29,14 @@ execute "Install plugin" do
   command "/usr/share/elasticsearch/bin/plugin install lmenezes/elasticsearch-kopf/2.0"
   not_if "test -d /usr/share/elasticsearch/plugins/kopf"
 end
+
+template "/etc/elasticsearch/elasticsearch.yml" do
+  user "root"
+  source "templates//etc/elasticsearch/elasticsearch.yml.erb"
+  mode "750"
+end
+
+service "elasticsearch" do
+  user "root"
+  action :restart
+end
