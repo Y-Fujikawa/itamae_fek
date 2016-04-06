@@ -3,8 +3,8 @@
 Provisioning to Server used Itamae
 
 - Fluentd (td-agent2)
-- Elasticsearch2.2
-- Kibana4.4
+- Elasticsearch2.3
+- Kibana4.5
 
 ## Usage
 ```
