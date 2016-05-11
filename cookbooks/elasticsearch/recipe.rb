@@ -32,7 +32,9 @@ end
 
 template "/etc/elasticsearch/elasticsearch.yml" do
   user "root"
-  source "templates//etc/elasticsearch/elasticsearch.yml.erb"
+  owner "root"
+  group "elasticsearch"
+  source "templates/etc/elasticsearch/elasticsearch.yml.erb"
   mode "750"
 end
 
